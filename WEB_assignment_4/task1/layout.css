@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #333;
+}
+
+/* Container with Flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* Boxes */
+.box {
+  background-color: #007bff;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  min-width: 200px;
+}
+
+/* Desktop: 3 in a row */
+@media (min-width: 901px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+/* Tablet: 2 in a row */
+@media (max-width: 900px) and (min-width: 601px) {
+  .container {
+    justify-content: center;
+  }
+  .box {
+    flex: 1 1 45%;
+  }
+}
+
+/* Mobile: stacked */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    width: 80%;
+  }
+}

@@ -1,0 +1,33 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Headings */
+h2, h4, h5 {
+  font-weight: 600;
+}
+
+/* Add subtle hover for cards */
+.card:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Footer */
+footer {
+  font-size: 14px;
+}
+
+/* 📱 Custom Media Queries */
+@media (max-width: 900px) {
+  h2 { font-size: 22px; }
+  p { font-size: 15px; }
+}
+
+@media (max-width: 600px) {
+  h2 { font-size: 20px; text-align: center; }
+  footer { font-size: 12px; }
+  .card-body p { font-size: 14px; }
+  .navbar-brand { font-size: 18px; }
+}
